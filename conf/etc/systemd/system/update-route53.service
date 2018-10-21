@@ -1,0 +1,15 @@
+[Unit]
+Description=update-route53 background service
+After=network.target
+
+[Service]
+Type=oneshot
+SyslogIdentifier=update-route53
+Environment=AWS_ACCESS_KEY_ID=placeholder_aws_access_key_id
+Environment=AWS_SECRET_ACCESS_KEY=placeholder_aws_secret_access_key
+Environment=DNSNAME=mysubdomain.mydomain.com
+ExecStart=/usr/local/bin/update-route53 ${DNSNAME}
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=update-route53 background service hourly and on boot
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=1hours
+
+[Install]
+WantedBy=timers.target
