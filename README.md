@@ -1,4 +1,7 @@
 # update-route53
+[![Build Status](https://travis-ci.com/ccoakley/update-route53.svg?branch=master)](https://travis-ci.com/ccoakley/update-route53)
+[![codecov](https://codecov.io/gh/ccoakley/update-route53/branch/master/graph/badge.svg)](https://codecov.io/gh/ccoakley/update-route53)
+
 Updates route53 for a name and IP address. This was designed to allow a machine with a floating IP address to self-update its hostname.
 
 # To build
