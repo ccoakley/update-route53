@@ -34,7 +34,7 @@ class TestRoute53Updater(unittest.TestCase):
         self.assertEqual(ret, 'zone1')
 
     @patch('update_route53.boto3')
-    def test_get_hosted_zone_id_for_domain(self, mock_boto3):
+    def test_upsert_name_with_ip(self, mock_boto3):
         mock_client = MagicMock()
         mock_boto3.client.return_value = mock_client
         mock_client.change_resource_record_sets.return_value = 'fake_return'
