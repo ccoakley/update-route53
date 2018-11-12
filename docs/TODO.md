@@ -1,7 +1,7 @@
 # TODO
 ## v1.0.0
-1. travisci
-2. Better documentation
+1. Better documentation
+2. Bump test coverage
 ## v1.1.0+
 1. Finish systemd configuration
 2. Make installer for systemd
